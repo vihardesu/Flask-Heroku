@@ -1,7 +1,9 @@
-from flask import Flask 
+from flask import Flask
+from flask_cors import CORS
   
-app = Flask(__name__) 
+app = Flask(__name__)
+CORS(app)
   
 @app.route("/") 
 def home_view(): 
-        return "<h1>Welcome to Geeks for Geeks</h1>"
+        return "Boilerplate for Flask API"
